@@ -21,7 +21,7 @@ final class ResourceFactory {
     static Rectangle createCursorRectangle() {
         int cursorDotSize = application().settings().annotations().creation().cursorSize();
         Rectangle rectangle = new Rectangle(0, 0, cursorDotSize, cursorDotSize);
-        rectangle.setFill(Color.web(application().settings().annotations().creation().cursorColour()));
+        rectangle.setFill(Color.RED);
         rectangle.setPickOnBounds(false);
         rectangle.setMouseTransparent(true);
         rectangle.setManaged(false);
@@ -37,7 +37,7 @@ final class ResourceFactory {
     static Rectangle createDragRectangle() {
         Rectangle rectangle = new Rectangle(0, 0, 0, 0);
         rectangle.setFill(null);
-        rectangle.setStroke(Color.web(application().settings().annotations().creation().borderColour()));
+        rectangle.setStroke(Color.ORANGE);
         rectangle.setStrokeWidth(application().settings().annotations().creation().borderSize());
         rectangle.setStrokeType(STROKE_TYPE);
         rectangle.setManaged(false);

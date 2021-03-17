@@ -90,7 +90,7 @@ class AnnotationComponent extends Group {
             rectangle.setStrokeWidth(application().settings().annotations().selection().borderSize());
         } else {
             this.selected = false;
-            rectangle.setStroke(Color.web(application().settings().annotations().display().borderColour()));
+            rectangle.setStroke(Color.YELLOW);
             rectangle.setStrokeWidth(application().settings().annotations().display().borderSize());
         }
     }
